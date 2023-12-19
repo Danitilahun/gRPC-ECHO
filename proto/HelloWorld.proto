@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package helloworld;
+
+option go_package = "helloworld";
+
+// Definition of the Greeter service
+service Greeter {
+    // Definition of the SayHello RPC method
+    rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+// Definition of the HelloRequest message
+message HelloRequest {
+    string name = 1; // Field to capture the name parameter
+}
+
+// Definition of the HelloResponse message
+message HelloResponse {
+    string message = 1; // Field to contain the response message
+}
