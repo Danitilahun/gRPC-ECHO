@@ -2,7 +2,7 @@ module github.com/Danitilahun/gRPC-Hello_World.git
 
 go 1.21.3
 
-require google.golang.org/grpc v1.60.1
+require google.golang.org/grpc v1.58.3
 
 require (
 	github.com/golang/protobuf v1.5.3 // indirect
